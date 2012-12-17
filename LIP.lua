@@ -48,6 +48,9 @@ function LIP.load(fileName)
 			elseif(value == 'false')then
 				value = false;
 			end
+			if(tonumber(param))then
+				param = tonumber(param);
+			end
 			data[section][param] = value;
 		end
 	end
