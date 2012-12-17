@@ -67,11 +67,11 @@ function LIP.save(fileName, data)
 	local file = assert(io.open(fileName, 'w+b'), 'Error loading file :' .. fileName);
 	local contents = '';
 	for section, param in pairs(data) do
-		contents = contents .. ('[%s]\r\n'):format(section);
+		contents = contents .. ('[%s]\n'):format(section);
 		for key, value in pairs(param) do
-			contents = contents .. ('%s=%s\r\n'):format(key, tostring(value));
+			contents = contents .. ('%s=%s\n'):format(key, tostring(value));
 		end
-		contents = contents .. '\r\n';
+		contents = contents .. '\n';
 	end
 	file:write(contents);
 	file:close();
