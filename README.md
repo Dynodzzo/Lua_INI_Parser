@@ -2,8 +2,9 @@
 *Lua INI Parser* is a tiny Lua library allowing to handle *.ini* files.
 
 #Usage#
-Add [LIP.lua](https://github.com/Dynodzzo/Lua_INI_Parser/blob/master/LIP.lua) file into your project folder.
-Call it using __require__ function. It will return a table containing read & write functions.
+Add [LIP.lua](https://github.com/Dynodzzo/Lua_INI_Parser/blob/master/LIP.lua) file into your project folder.<br />
+Call it using __require__ function.<br />
+It will return a table containing read & write functions.
 
 #Full overview#
 * __LIP.load(fileName)__ : Returns a table containing all the values from the file.
@@ -87,7 +88,7 @@ print(data[2][3]); --> true
 ````
 
 #Licence#
-This project is under [MIT Licence][]
+This project is under [MIT Licence][]<br />
 Copyright © Carreras Nicolas
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -107,3 +108,5 @@ Copyright © Carreras Nicolas
 	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 	SOFTWARE.
+
+[MIT Licence]: http://opensource.org/licenses/MIT
