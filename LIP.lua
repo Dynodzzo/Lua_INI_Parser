@@ -39,7 +39,7 @@ function LIP.load(fileName)
 			section = tonumber(tempSection) and tonumber(tempSection) or tempSection;
 			data[section] = data[section] or {};
 		end
-		local param, value = line:match('^(%w+)%s-=%s-(.+)$');
+		local param, value = line:match('^([%w|_]+)%s-=%s-(.+)$');
 		if(param and value ~= nil)then
 			if(tonumber(value))then
 				value = tonumber(value);
