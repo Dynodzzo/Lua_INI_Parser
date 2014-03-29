@@ -10,7 +10,7 @@ It will return a table containing read & write functions.
 * __LIP.load(fileName)__ : Returns a table containing all the values from the file.
 * __LIP.save(fileName, data)__ : Saves the data into the specified file.
 
-#Exemples#
+#Examples#
 Here's how to save some data :
 
 ```lua
