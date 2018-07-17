@@ -1,16 +1,16 @@
-#LIP - Lua INI Parser#
+# LIP - Lua INI Parser
 *Lua INI Parser* is a tiny Lua library allowing to handle *.ini* files.
 
-#Usage#
+# Usage
 Add [LIP.lua](https://github.com/Dynodzzo/Lua_INI_Parser/blob/master/LIP.lua) file into your project folder.<br />
 Call it using __require__ function.<br />
 It will return a table containing read & write functions.
 
-#Full overview#
+# Full overview
 * __LIP.load(fileName)__ : Returns a table containing all the values from the file.
 * __LIP.save(fileName, data)__ : Saves the data into the specified file.
 
-#Examples#
+# Examples
 Here's how to save some data :
 
 ```lua
@@ -87,7 +87,7 @@ print(data[2][1]); --> Some text
 print(data[2][3]); --> true
 ````
 
-#Licence#
+# Licence
 This project is under [MIT Licence][]<br />
 Copyright © Carreras Nicolas
 
