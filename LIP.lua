@@ -34,7 +34,7 @@ function LIP.load(fileName)
 	local data = {};
 	local section;
 	for line in file:lines() do
-		local tempSection = line:match('^%[([^%[%]]+)%]$');
+		local tempSection = line:match('^%[([^%[%]]+)%][\r]?$');
 		if(tempSection)then
 			section = tonumber(tempSection) and tonumber(tempSection) or tempSection;
 			data[section] = data[section] or {};
